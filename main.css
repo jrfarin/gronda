@@ -1,0 +1,205 @@
+
+::-webkit-input-placeholder,
+input[placeholder],
+[placeholder],
+*[placeholder] {
+  font-size: 0.7rem;
+  color: #717171;
+}
+
+body {
+  color: #3a3231;
+  font-family: "Montserrat", sans-serif;
+}
+body.lab-light {
+  background: #f9f9f9;
+}
+body a {
+  color: #f4bdaa;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+body a:before {
+  transition: all 0.3s ease-in-out;
+}
+body a:hover {
+  color: #3a3231;
+}
+
+
+.lab-nav {
+  background-image: url("./assets/images/bground/motif-primary.jpg");
+  background-repeat: repeat-x;
+  font-size: 0.8rem;
+}
+.cooqueen header .lab-nav a, .cooqueen header .lab-nav span {
+  color: rgba(0, 0, 0, 0.35);
+}
+.cooqueen .title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  letter-spacing: -2px;
+  color: #f0aa91;
+}
+.cooqueen .desc {
+  margin-top: -1.5rem;
+  font-size: 0.65rem;
+  letter-spacing: 5px;
+  color: #3a3231;
+}
+.cooqueen header #mainNav a {
+  position: relative;
+  color: #3a3231;
+  font-size: 0.9rem;
+}
+
+
+
+.cooqueen .masonry {
+  transition: all 0.5s ease-in-out;
+  column-count: 2;
+  column-gap: 15px;
+  column-fill: initial;
+}
+.cooqueen .masonry .brick {
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: top;
+  background: #f4bdaa;
+}
+.cooqueen .masonry .brick img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+}
+.cooqueen .masonry .brick:hover img {
+  opacity: 0.1;
+}
+.cooqueen .masonry .brick .backside {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cooqueen .masonry .brick:hover .backside {
+  opacity: 1;
+}
+
+
+.cooqueen .recipe-main-box {
+  max-width: 90%;
+}
+.cooqueen .recipe-main-box .separator {
+  background-image: url("./assets/images/bground/motif-primary.jpg");
+  background-repeat: repeat-x;
+  height: 40px;
+}
+.cooqueen .recipe-main-box .recipe-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  color: #a3c0ae;
+}
+.cooqueen .recipe-main-box .recipe-info {
+  font-size: 0.85rem;
+}
+.cooqueen .recipe-main-box .ingredients-box {
+  background: #e6ebe8;
+}
+.cooqueen .recipe-main-box .ingredients-box h4 {
+  color: #a3c0ae;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.25rem;
+}
+.cooqueen .recipe-main-box .ingredients-box .ingredients span {
+  display: block;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.cooqueen .recipe-main-box .ingredients-box .ingredients ul {
+  list-style: none;
+  column-count: 2;
+}
+.cooqueen .recipe-main-box .ingredients-box .ingredients ul li {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.cooqueen .recipe-main-box .ingredients-box .ingredients ul li:before {
+  position: relative;
+  top: -2px;
+  content: " - ";
+}
+.cooqueen .recipe-main-box .elaboration-box p {
+  font-size: 0.8rem;
+  text-align: justify;
+  margin-bottom: 0.75rem;
+}
+.cooqueen .recipe-main-box .elaboration-box p span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #f0aa91;
+  padding-right: 0.25rem;
+}
+.cooqueen .display-5 {
+  font-family: "Bebas Neue", cursive;
+  color: #f0aa91;
+}
+
+
+.cooqueen footer {
+  height: 50px;
+  background-image: url("./assets/images/bground/motif-primary.jpg");
+  background-repeat: repeat-x;
+  font-size: 0.8rem;
+}
+.cooqueen footer .brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.25rem;
+  color: #f0aa91;
+  padding-top: 1px;
+}
+
+
+@media (min-width: 768px) {
+  .cooqueen header #mainNav li {
+    border: none!important;
+  }
+  .cooqueen header #mainNav a:before {
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 2.5px;
+    content: "";
+    background: #a3c0ae;
+  }
+  .cooqueen header #mainNav a:hover:before,
+  .cooqueen header #mainNav a.active:before {
+    width: 100%;
+  } 
+  .cooqueen  .masonry {
+    column-count: 3;
+    column-gap: 30px;
+  }
+  .cooqueen .masonry .brick {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .cooqueen  .masonry {
+    column-count: 4;
+  }
+}
+
+
