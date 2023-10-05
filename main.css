@@ -29,7 +29,7 @@ body a:hover {
 
 .lab-nav {
   background-image: url("./assets/images/bground/motif-primary.jpg");
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   font-size: 0.8rem;
 }
 .cooqueen header .lab-nav a, .cooqueen header .lab-nav span {
@@ -52,7 +52,9 @@ body a:hover {
   color: #3a3231;
   font-size: 0.9rem;
 }
-
+#mainNav .dropdown-divider {
+  width: 90%;
+}
 
 
 .cooqueen .masonry {
@@ -94,31 +96,24 @@ body a:hover {
 }
 
 
-.cooqueen .recipe-main-box {
-  max-width: 90%;
-}
-.cooqueen .recipe-main-box .separator {
-  background-image: url("./assets/images/bground/motif-primary.jpg");
-  background-repeat: repeat-x;
-  height: 40px;
-}
-.cooqueen .recipe-main-box .recipe-title {
+
+.cooqueen .recipe-title {
   font-family: "Bebas Neue", cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #a3c0ae;
 }
-.cooqueen .recipe-main-box .recipe-info {
+.cooqueen .recipe-info {
   font-size: 0.85rem;
 }
-.cooqueen .recipe-main-box .ingredients-box {
+.cooqueen .ingredients-box {
   background: #e6ebe8;
 }
-.cooqueen .recipe-main-box .ingredients-box h4 {
+.cooqueen .ingredients-box h4 {
   color: #a3c0ae;
   font-family: "Bebas Neue", cursive;
   font-size: 1.25rem;
 }
-.cooqueen .recipe-main-box .ingredients-box .ingredients span {
+.cooqueen .ingredients-box .ingredients span {
   display: block;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
@@ -126,18 +121,11 @@ body a:hover {
   font-size: 0.8rem;
 }
 .cooqueen .recipe-main-box .ingredients-box .ingredients ul {
-  list-style: none;
   column-count: 2;
 }
 .cooqueen .recipe-main-box .ingredients-box .ingredients ul li {
-  display: block;
   text-transform: uppercase;
   font-size: 0.7rem;
-}
-.cooqueen .recipe-main-box .ingredients-box .ingredients ul li:before {
-  position: relative;
-  top: -2px;
-  content: " - ";
 }
 .cooqueen .recipe-main-box .elaboration-box p {
   font-size: 0.8rem;
@@ -150,11 +138,6 @@ body a:hover {
   color: #f0aa91;
   padding-right: 0.25rem;
 }
-.cooqueen .display-5 {
-  font-family: "Bebas Neue", cursive;
-  color: #f0aa91;
-}
-
 
 .cooqueen footer {
   height: 50px;
