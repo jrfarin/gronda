@@ -4,3 +4,7 @@ let currentYear = today.getFullYear();
 
 const year = document.querySelector('.year');
 year.innerHTML = currentYear;
+
+
+
+

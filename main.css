@@ -1,4 +1,3 @@
-
 ::-webkit-input-placeholder,
 input[placeholder],
 [placeholder],
@@ -68,6 +67,10 @@ body a:hover {
   display: inline-block;
   vertical-align: top;
   background: #f4bdaa;
+  display: none;
+}
+.show-brick {
+  display: block!important;
 }
 .cooqueen .masonry .brick img {
   opacity: 1;

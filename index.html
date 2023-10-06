@@ -29,22 +29,36 @@
                         </button>
                         <div class="navbar-collapse collapse" id="navbar-jrf">
                             <ul class="navbar-nav mx-auto mb-2 mb-md-0">
-                                <li class="nav-item border-bottom border-white py-1 mx-3"><a href="./recipe.html" class="nav-link text-uppercase p-0 pt-2 active" aria-current="page">Todas las recetas</a></li>                          
-                                <li class="nav-item border-bottom border-white py-1 mx-3"><a href="#" class="nav-link text-uppercase p-0 pt-2">Bio</a></li>
-                                <li class="nav-item border-bottom border-white py-1 mx-3"><a href="#" class="nav-link text-uppercase p-0 pt-2">Visual Collection</a></li>
-                                <li class="nav-item dropdown py-1 mx-3"><a class="nav-link dropdown-toggle text-uppercase p-0 pt-2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gastro</a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item text-uppercase" href="#">Snacks</a></li>
+                                <li id="filterContainer" class="nav-item dropdown py-1 mx-3">
+                                    <a onclick="filterSelection('all')" class="active nav-link dropdown-toggle text-uppercase p-0 pt-2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Todas las recetas</a>
+                                    <ul class="filter dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a onclick="filterSelection('snacks')" class="filter dropdown-item text-uppercase">Snacks</a>
+                                        </li>
                                         <li><hr class="dropdown-divider mx-auto"></li>
-                                        <li><a class="dropdown-item text-uppercase" href="#">Entrantes</a></li>
+                                        <li>
+                                            <a onclick="filterSelection('entrantes')" class="filter dropdown-item text-uppercase">Entrantes</a>
+                                        </li>
                                         <li><hr class="dropdown-divider mx-auto"></li>
-                                        <li><a class="dropdown-item text-uppercase" href="#">Platos</a></li>
+                                        <li>
+                                            <a onclick="filterSelection('platos')" class="filter dropdown-item text-uppercase">Platos</a>
+                                        </li>
                                         <li><hr class="dropdown-divider mx-auto"></li>
-                                        <li><a class="dropdown-item text-uppercase" href="#">Postres</a></li>
+                                        <li>
+                                            <a onclick="filterSelection('postres')" class="filter dropdown-item text-uppercase">Postres</a>
+                                        </li>
                                         <li><hr class="dropdown-divider mx-auto"></li>
-                                        <li><a class="dropdown-item text-uppercase" href="#">Otros</a></li>
+                                        <li>
+                                            <a onclick="filterSelection('otros')"  class="filter dropdown-item text-uppercase">Otros</a>
+                                        </li>
                                     </ul>
+                                </li>                          
+                                <li class="nav-item border-bottom border-white py-1 mx-3">
+                                    <a href="bio.html" class="nav-link text-uppercase p-0 pt-2">Bio</a>
                                 </li>
+                                <li class="nav-item border-bottom border-white py-1 mx-3">
+                                    <a href="collections.html" class="nav-link text-uppercase p-0 pt-2">Visual Collection</a>
+                                </li>                  
                             </ul>                    
                         </div>
                     </div>
@@ -66,8 +80,8 @@
         <main class="container px-0 py-3 mt-md-3">
             <div class="row" id="mainRecipes">
                 <div class="col-12">
-                    <div class="masonry">
-                        <div class="brick">
+                    <div class="masonry pb-5">                     
+                        <div class="brick pescados">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/Navajas.webp" class="img-fluid" alt="Cherry plant">
                                 <div class="backside">
@@ -79,7 +93,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="brick">
+                        <div class="brick entrantes">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/KingCrab.webp" class="img-fluid" alt="Oranges and Pomegranates">
                                 <div class="backside">
@@ -91,7 +105,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="brick">
+                        <div class="brick entrantes">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/BucheSaumon.webp" class="img-fluid" alt="Strawberry">
                                 <div class="backside">
@@ -103,7 +117,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="brick">
+                        <div class="brick entrantes">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/Migas.webp" class="img-fluid" alt="Blueberries">
                                 <div class="backside">
@@ -115,11 +129,11 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="brick">
+                        <div class="brick snacks">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/Omelette.webp" class="img-fluid" alt="Pears">
                                 <div class="backside">
-                                    <span class="d-block text-white fs-2 fw-bold mb-2">Entrantes</span>
+                                    <span class="d-block text-white fs-2 fw-bold mb-2">Snacks</span>
                                     <span class="d-block text-white fs-6 fw-bold pb-1 mb-2">Espuma de tortilla francesa</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-egg" viewBox="0 0 16 16">
                                         <path d="M8 15a5 5 0 0 1-5-5c0-1.956.69-4.286 1.742-6.12.524-.913 1.112-1.658 1.704-2.164C7.044 1.206 7.572 1 8 1c.428 0 .956.206 1.554.716.592.506 1.18 1.251 1.704 2.164C12.31 5.714 13 8.044 13 10a5 5 0 0 1-5 5zm0 1a6 6 0 0 0 6-6c0-4.314-3-10-6-10S2 5.686 2 10a6 6 0 0 0 6 6z"/>
@@ -127,7 +141,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="brick">
+                        <div class="brick pescados">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/Carpaccio.webp" class="img-fluid" alt="Easter-eggs">
                                 <div class="backside">
@@ -139,7 +153,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="brick">
+                        <div class="brick snacks">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/Irish.webp" class="img-fluid" alt="Lemons">
                                 <div class="backside">
@@ -151,7 +165,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="brick">
+                        <div class="brick snacks">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/TejaVitelotte.webp" class="img-fluid" alt="Cherries">
                                 <div class="backside">
@@ -163,7 +177,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="brick">
+                        <div class="brick platos">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/Foie.webp" class="img-fluid" alt="Grapes">
                                 <div class="backside">
@@ -181,10 +195,12 @@
         </main>
 
         <!-- Footer -->
-        <footer class="d-flex justify-content-center align-items-center">
-            <span>&copy</span>
-            <span class="year pe-2"></span>
-            <span class="brand">J.R. Farin</span>
+        <footer class="row fixed-bottom">
+            <div class="col-12 d-flex justify-content-center align-items-center lab-nav">
+                <span>&copy</span>
+                <span class="year pe-2"></span>
+                <span class="brand">J.R. Farin</span>
+            </div>
         </footer>
     </div>
 
@@ -192,6 +208,54 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
     <script src="./main.js" type="module"></script>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(family) {
+            let filterDiv;
+            let i;
+            filterDiv = document.getElementsByClassName("brick");
+            if (family == "all") family = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < filterDiv.length; i++) {
+                RemoveClass(filterDiv[i], "show-brick");
+                if (filterDiv[i].className.indexOf(family) > -1) AddClass(filterDiv[i], "show-brick");
+            }
+        }
+        // Show filtered elements
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+        }
+        // Hide elements that are not selected
+        function RemoveClass(element, name) {
+            let i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+        // Add active class to the current control button (highlight it)
+        const filterContainer = document.getElementById("filerContainer");
+        const filter = filterContainer.getElementsByClassName("filter");
+        for (let i = 0; i < filter.length; i++) {
+            filter[i].addEventListener("click", function() {
+                let current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 
 </body>
 </html>
