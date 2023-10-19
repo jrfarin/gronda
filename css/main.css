@@ -27,7 +27,7 @@ body a:hover {
 
 
 .lab-nav {
-  background-image: url("./assets/images/bground/motif-primary.jpg");
+  background-image: url("../assets/images/bground/motif-primary.jpg");
   background-repeat: repeat;
   font-size: 0.8rem;
 }
@@ -144,7 +144,7 @@ body a:hover {
 
 .cooqueen footer {
   height: 50px;
-  background-image: url("./assets/images/bground/motif-primary.jpg");
+  background-image: url("../assets/images/bground/motif-primary.jpg");
   background-repeat: repeat-x;
   font-size: 0.8rem;
 }

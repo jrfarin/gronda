@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <title>Chef JRFarin</title>
+    <title>Chef JRFarin Todas las recetas</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -11,14 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body class="lab-light">
-    <div class="container-fluid cooqueen" id="allRecipes">
-        <!-- Login -->
+    <section class="container-fluid cooqueen" id="allRecipes">
+        <!-- Header -->
         <header class="row flex-column flex-md-column-reverse">
             <div class="col-12 lab-nav">
                 <!-- Navigation -->
@@ -80,7 +79,19 @@
         <main class="container px-0 py-3 mt-md-3">
             <div class="row" id="mainRecipes">
                 <div class="col-12">
-                    <div class="masonry pb-5">                     
+                    <div class="masonry pb-5">
+                        <div class="brick entrantes">
+                            <a href="#bucheModal" data-bs-toggle="modal" class="d-block position-relative">
+                                <img src="./assets/images/BucheSaumon.webp" class="img-fluid" alt="Bûche de salmón">
+                                <div class="backside">
+                                    <span class="d-block text-white fs-2 fw-bold mb-2">Entrantes</span>
+                                    <span class="d-block text-white fs-6 fw-bold pb-1 mb-2">Bûche de Salmón ahumado, relleno de mousse de Salmón fresco y caviar</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-egg" viewBox="0 0 16 16">
+                                        <path d="M8 15a5 5 0 0 1-5-5c0-1.956.69-4.286 1.742-6.12.524-.913 1.112-1.658 1.704-2.164C7.044 1.206 7.572 1 8 1c.428 0 .956.206 1.554.716.592.506 1.18 1.251 1.704 2.164C12.31 5.714 13 8.044 13 10a5 5 0 0 1-5 5zm0 1a6 6 0 0 0 6-6c0-4.314-3-10-6-10S2 5.686 2 10a6 6 0 0 0 6 6z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>                     
                         <div class="brick pescados">
                             <a href="/" class="d-block position-relative">
                                 <img src="./assets/images/Navajas.webp" class="img-fluid" alt="Cherry plant">
@@ -99,18 +110,6 @@
                                 <div class="backside">
                                     <span class="d-block text-white fs-2 fw-bold mb-2">Entrantes</span>
                                     <span class="d-block text-white fs-6 fw-bold pb-1 mb-2">Canalones de Cangrejo Real con Coulis de Erizos de mar</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-egg" viewBox="0 0 16 16">
-                                        <path d="M8 15a5 5 0 0 1-5-5c0-1.956.69-4.286 1.742-6.12.524-.913 1.112-1.658 1.704-2.164C7.044 1.206 7.572 1 8 1c.428 0 .956.206 1.554.716.592.506 1.18 1.251 1.704 2.164C12.31 5.714 13 8.044 13 10a5 5 0 0 1-5 5zm0 1a6 6 0 0 0 6-6c0-4.314-3-10-6-10S2 5.686 2 10a6 6 0 0 0 6 6z"/>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="brick entrantes">
-                            <a href="/" class="d-block position-relative">
-                                <img src="./assets/images/BucheSaumon.webp" class="img-fluid" alt="Strawberry">
-                                <div class="backside">
-                                    <span class="d-block text-white fs-2 fw-bold mb-2">Entrantes</span>
-                                    <span class="d-block text-white fs-6 fw-bold pb-1 mb-2">Bûche de Salmón ahumado, relleno de mousse de Salmón fresco y caviar</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-egg" viewBox="0 0 16 16">
                                         <path d="M8 15a5 5 0 0 1-5-5c0-1.956.69-4.286 1.742-6.12.524-.913 1.112-1.658 1.704-2.164C7.044 1.206 7.572 1 8 1c.428 0 .956.206 1.554.716.592.506 1.18 1.251 1.704 2.164C12.31 5.714 13 8.044 13 10a5 5 0 0 1-5 5zm0 1a6 6 0 0 0 6-6c0-4.314-3-10-6-10S2 5.686 2 10a6 6 0 0 0 6 6z"/>
                                     </svg>
@@ -202,60 +201,97 @@
                 <span class="brand">J.R. Farin</span>
             </div>
         </footer>
-    </div>
+
+        <!-- Modals -->
+        <div class="modal fade" id="bucheModal" tabindex="-1" aria-labelledby="bucheModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-fullscreen-lg-down">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0 p-md-3">
+                        <div class="container-fluid recipe-main-box">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12 col-sm-6">
+                                    <img src="./assets/images/BucheSaumon.webp" class="img-fluid" alt="Buche de salmón">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="d-flex align-items-center social-print my-2">
+                                        <a href="/" class="lab-article-link" title="Link to Instagram">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#a3c0ae" viewBox="0 0 28.54 28.54"><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><circle class="cls-1" cx="14.27" cy="14.27" r="3.22" /><path class="cls-1" d="M21.79 8.58A3.2 3.2 0 0 0 20 6.75a5.34 5.34 0 0 0-1.79-.33c-1 0-1.32-.06-3.9-.06s-2.88 0-3.9.06a5.34 5.34 0 0 0-1.79.33 3.2 3.2 0 0 0-1.87 1.83 5.34 5.34 0 0 0-.33 1.79c0 1-.06 1.32-.06 3.9s0 2.88.06 3.9A5.34 5.34 0 0 0 6.75 20a3.2 3.2 0 0 0 1.83 1.83 5.34 5.34 0 0 0 1.79.33c1 0 1.32.06 3.9.06s2.88 0 3.9-.06a5.34 5.34 0 0 0 1.83-.37A3.2 3.2 0 0 0 21.79 20a5.34 5.34 0 0 0 .33-1.79c0-1 .06-1.32.06-3.9s0-2.88-.06-3.9a5.34 5.34 0 0 0-.33-1.83zm-7.52 10.64a5 5 0 1 1 5-5 5 5 0 0 1-5 5zm5.15-8.95a1.16 1.16 0 1 1 1.16-1.16 1.16 1.16 0 0 1-1.16 1.17z" /><path class="cls-1" d="M14.27 0a14.27 14.27 0 1 0 14.27 14.27A14.27 14.27 0 0 0 14.27 0zm9.59 18.25a7.08 7.08 0 0 1-.45 2.34 4.93 4.93 0 0 1-2.82 2.82 7.08 7.08 0 0 1-2.34.45c-1 0-1.36.06-4 .06s-2.95 0-4-.06a7.08 7.08 0 0 1-2.34-.45 4.93 4.93 0 0 1-2.82-2.82 7.08 7.08 0 0 1-.45-2.34c0-1-.06-1.36-.06-4s0-2.95.06-4a7.08 7.08 0 0 1 .45-2.34 4.93 4.93 0 0 1 2.86-2.78 7.08 7.08 0 0 1 2.34-.45c1 0 1.36-.06 4-.06s2.95 0 4 .06a7.08 7.08 0 0 1 2.34.45 4.93 4.93 0 0 1 2.82 2.82 7.08 7.08 0 0 1 .45 2.34c0 1 .06 1.36.06 4s-.05 2.93-.1 3.96z" /></g></g></svg>
+                                        </a>
+                                        <a href="/" class="lab-article-link ps-2" title="Link to Pinterest">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#a3c0ae" viewBox="0 0 28.54 28.54"><g data-name="Capa 2"><path d="M14.27 0a14.27 14.27 0 0 0-5.73 27.34 12.59 12.59 0 0 1 .25-3.28l1.84-7.77a5.46 5.46 0 0 1-.46-2.29c0-2.11 1.23-3.69 2.75-3.69a1.91 1.91 0 0 1 1.92 2.14c0 1.31-.83 3.26-1.26 5.06a2.21 2.21 0 0 0 2.25 2.75c2.7 0 4.52-3.47 4.52-7.59 0-3.13-2.11-5.47-5.94-5.47a6.76 6.76 0 0 0-7 6.83 4.12 4.12 0 0 0 .94 2.8.69.69 0 0 1 .2.79c-.07.26-.23.9-.29 1.15a.49.49 0 0 1-.71.36c-2-.81-2.92-3-2.92-5.45C4.62 9.66 8 4.8 14.82 4.8c5.45 0 9 3.94 9 8.17 0 5.6-3.11 9.78-7.7 9.78A4.09 4.09 0 0 1 12.67 21s-.83 3.29-1 3.92A12.07 12.07 0 0 1 10.23 28a14.27 14.27 0 1 0 4-28" data-name="Capa 1" /></g></svg>                                
+                                        </a>
+                                        <a href="/" class="lab-article-link ps-2" title="Link to Gronda">
+                                            <img src="./assets/images/bground/grondaLogo.webp" width="25" height="25" alt="">
+                                        </a>
+                                        <a href="javascript:window.print()" class="lab-article-link ps-2" title="Print">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#a3c0ae" viewBox="0 0 64 64" xml:space="preserve"><path d="M57.788 14.031H52.5V5.97a4 4 0 0 0-4-4h-33a4 4 0 0 0-4 4v8.062H6.212A6.22 6.22 0 0 0 0 20.243v26.27a6.22 6.22 0 0 0 6.212 6.213h2.38a1 1 0 1 0 0-2h-2.38A4.217 4.217 0 0 1 2 46.514v-26.27a4.217 4.217 0 0 1 4.212-4.213h51.576A4.217 4.217 0 0 1 62 20.243v26.27a4.217 4.217 0 0 1-4.212 4.213H56a1 1 0 1 0 0 2h1.788A6.22 6.22 0 0 0 64 46.514v-26.27a6.22 6.22 0 0 0-6.212-6.213zM13.5 5.97c0-1.103.897-2 2-2h33c1.103 0 2 .897 2 2v8h-37v-8z"/><path d="M44 45.032H20a.999.999 0 1 0 0 1.998h24a.999.999 0 1 0 0-1.998zM44 52.032H20a.999.999 0 1 0 0 1.998h24a.999.999 0 1 0 0-1.998z"/><circle cx="7.959" cy="21.841" r="2"/><circle cx="14.286" cy="21.841" r="2"/><circle cx="20.612" cy="21.841" r="2"/><path d="M11 62.031h42v-26H11v26zm2.404-23.596h37.192v21.193H13.404V38.435z"/></svg>                        
+                                        </a>
+                                    </div>
+                                    <div class="mb-2">
+                                        <h3 class="recipe-title text-uppercase">Milhojas de micuit de foie, ceps y manzana verde</h3>
+                                    </div>
+                                    <div class="recipe-info d-flex justify-content-between border-top border-bottom py-2 mb-3">
+                                        <p class="time mb-0">
+                                            <strong>Preparación</strong>
+                                            <span class="d-block">20 min</span>
+                                        </p>
+                                        <p class="baking mb-0">
+                                            <strong>Cocción</strong>
+                                            <span class="d-block">50 min</span>
+                                        </p>
+                                        <p class="quantity mb-0">
+                                            <strong>Cantidad</strong>
+                                            <span class="d-block">4 rac</span>
+                                        </p>                   
+                                        <p class="rest mb-0">
+                                            <strong>Reposo</strong>
+                                            <span class="d-block">48 horas</span>					
+                                        </p>
+                                    </div>
+                                    <div class="ingredients-box mb-4">
+                                        <div class="px-2 py-3">
+                                            <h4 class="my-2">Ingredientes</h4>
+                                            <div class="ingredients">
+                                                <span class="ingredients-title">Para el Foie Gras</span>
+                                                <ul class="ingredients-list list-unstyled mb-0">
+                                                    <li>500gr Foie gras</li>
+                                                    <li>50gr Oporto blanco</li>
+                                                    <li>7gr sal</li>
+                                                    <li>2gr pimienta</li>
+                                                    <li>1gr 4 Especias</li>
+                                                    <li>100gr manzana</li>
+                                                    <li>200gr Ceps</li>
+                                                    <li>50gr Pure mandarina</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="elaboration-box mb-4">
+                                        <p><span>1 | </span>Mixez finement la poudre d’amande et le sucre glace ensemble. Tamisez ensuite la poudre obtenue de façon à enlever les "gros" grains qui risquent de rendre la surface des macarons irrégulière. Cette étape est importante pour obtenir des coques bien lisses.</p>
+                                        <p><span>2 | </span>Montez les blancs d’oeufs en neige bien ferme. Ajoutez ensuite 60g de sucre en poudre et continuez de battre. Les oeufs doivent être lisses et brillants.</p>
+                                        <p><span>3 | </span>Ajoutez le colorant pour obtenir un orange très clair. Pour ma part, j’ai utilisé un mélange de colorants liquides (rouge et jaune). Continuez à battre jusqu’à ce que vous obteniez une couleur bien uniforme.</p>
+                                        <p><span>4 | </span>Et maintenant, l’étape du macaronnage : incorporez à l’aide d’une maryse, le mélange sucre glace/poudre d’amande aux blancs en neige en plusieurs fois. Pour cela, soulevez la pâte de haut en bas pour ne pas casser les blancs.</p>
+                                        <p><span>5 | </span>Placez au four environ 15 à 17 min. A la sortie du four, si le dessous des macarons reste accroché au papier sulfurisé (ça m’est arrivé ;)) c’est que les macarons ne sont pas assez cuits. Replacez-les 1-2min au four. Laissez refroidir et décollez les coques.</p>
+                                        <p><span>6 | </span>Préchauffez votre four à 150°C. Laissez reposer dans un endroit sec environ 30min pour faire croûter les macarons. Le dessus des macarons doit être quasiment “sec” au touché après cette étape.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-
-    <script src="./main.js" type="module"></script>
-
-    <script>
-        filterSelection("all")
-        function filterSelection(family) {
-            let filterDiv;
-            let i;
-            filterDiv = document.getElementsByClassName("brick");
-            if (family == "all") family = "";
-            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-            for (i = 0; i < filterDiv.length; i++) {
-                RemoveClass(filterDiv[i], "show-brick");
-                if (filterDiv[i].className.indexOf(family) > -1) AddClass(filterDiv[i], "show-brick");
-            }
-        }
-        // Show filtered elements
-        function AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {
-                element.className += " " + arr2[i];
-                }
-            }
-        }
-        // Hide elements that are not selected
-        function RemoveClass(element, name) {
-            let i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
-        }
-        // Add active class to the current control button (highlight it)
-        const filterContainer = document.getElementById("filerContainer");
-        const filter = filterContainer.getElementsByClassName("filter");
-        for (let i = 0; i < filter.length; i++) {
-            filter[i].addEventListener("click", function() {
-                let current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/filter.js"></script>
 
 </body>
 </html>
